@@ -89,6 +89,7 @@
       <button
         class="redactor-submit"
         :disabled="$v.$invalid"
+        :class="{ submit: !$v.$invalid }"
         @click.prevent="
           addItemSubmit({
             price: parseInt(price),
